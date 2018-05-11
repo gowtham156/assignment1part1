@@ -1,0 +1,9 @@
+$table->increments('student_id');
+            $table->string('student_fname');
+            $table->string('student_lname');
+            $table->string('student_sname');
+            $table->date('dob');
+            $table->string('gender');
+            $table->string('ethnicity');
+            $table->string('email',100)->unique();
+            $table->rememberToken();
